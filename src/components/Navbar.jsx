@@ -18,14 +18,8 @@ export default function Navbar() {
 
                 {/* Brand Logo */}
                 <a href="#" className="flex items-center gap-3 group">
-                    <div className="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-[#D4AF37] to-[#8C6D1F] p-[1.5px] shadow-lg shadow-[#D4AF37]/20 group-hover:scale-105 transition-transform border border-[#D4AF37]/30">
-                        {personalInfo.avatar ? (
-                            <img src={personalInfo.avatar.replace(/^\/?public\//, '/')} alt={personalInfo.name} className="w-full h-full object-cover rounded-[10px]" />
-                        ) : (
-                            <div className="w-full h-full flex items-center justify-center font-black text-black text-xl">
-                                {personalInfo.name.charAt(0)}
-                            </div>
-                        )}
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#8C6D1F] flex items-center justify-center font-black text-black text-xl shadow-lg shadow-[#D4AF37]/20 group-hover:scale-105 transition-transform border border-[#D4AF37]/30">
+                        {personalInfo.name.charAt(0)}
                     </div>
                     <span className="font-bold text-lg tracking-wider text-white uppercase">
                         {personalInfo.name}<span className="text-[#D4AF37]">.</span>
