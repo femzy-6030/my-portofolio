@@ -19,10 +19,10 @@ export default function Navbar() {
                 {/* Brand Logo */}
                 <a href="#" className="flex items-center gap-3 group">
                     <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#8C6D1F] flex items-center justify-center font-black text-black text-xl shadow-lg shadow-[#D4AF37]/20 group-hover:scale-105 transition-transform border border-[#D4AF37]/30">
-                        {personalInfo.name.charAt(0)}
+                        O
                     </div>
                     <span className="font-bold text-lg tracking-wider text-white uppercase">
-                        {personalInfo.name}<span className="text-[#D4AF37]">.</span>
+                        OLUWAFEMI'S PORTFOLIO<span className="text-[#D4AF37]">.</span>
                     </span>
                 </a>
 
