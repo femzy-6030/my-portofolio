@@ -4,23 +4,23 @@ import { leadershipAndRoles } from '../assets/data/portfolioData'
 
 export default function Leadership() {
     return (
-        <section id="leadership" className="py-20 bg-[#0C0C0C] border-y border-white/5 relative">
-            <div className="max-w-6xl mx-auto px-6">
+        <section id="leadership" className="py-16 sm:py-20 bg-[#0C0C0C] border-y border-white/5 relative">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                <div className="mb-14">
+                <div className="mb-10 sm:mb-14">
                     <p className="text-[#D4AF37] font-bold text-xs uppercase tracking-widest mb-2">Impact & Ownership</p>
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
                         Leadership & Organizational Roles
                     </h2>
                 </div>
 
                 {/* Roles Timeline / Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     {leadershipAndRoles.map((role, idx) => (
                         <div
                             key={idx}
-                            className="p-8 rounded-2xl bg-[#121212] border border-white/10 hover:border-[#D4AF37]/40 transition-all duration-300 relative group"
+                            className="p-6 sm:p-8 rounded-2xl bg-[#121212] border border-white/10 hover:border-[#D4AF37]/40 transition-all duration-300 relative group"
                         >
                             <div className="flex items-center justify-between mb-4">
                                 <div className="w-10 h-10 rounded-lg bg-[#D4AF37]/10 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37]">
@@ -31,11 +31,11 @@ export default function Leadership() {
                                 </span>
                             </div>
 
-                            <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#D4AF37] transition-colors">
+                            <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-[#D4AF37] transition-colors">
                                 {role.title}
                             </h3>
 
-                            <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">
+                            <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 sm:mb-4">
                                 {role.organization}
                             </p>
 

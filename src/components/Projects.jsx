@@ -5,14 +5,14 @@ import { projects } from '../assets/data/portfolioData'
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-24 relative">
-            <div className="max-w-6xl mx-auto px-6">
+        <section id="projects" className="py-16 sm:py-24 relative">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div className="mb-10 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div>
                         <p className="text-[#D4AF37] font-bold text-xs uppercase tracking-widest mb-2">Portfolio</p>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
                             Featured Engineering Work
                         </h2>
                     </div>
@@ -22,11 +22,11 @@ export default function Projects() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="flex flex-col justify-between p-8 rounded-2xl bg-[#121212] border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden"
+                            className="flex flex-col justify-between p-6 sm:p-8 rounded-2xl bg-[#121212] border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden"
                         >
                             {/* Subtle Ambient Card Glow */}
                             <div className="absolute -right-12 -top-12 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl group-hover:bg-[#D4AF37]/15 transition-all pointer-events-none" />
@@ -45,7 +45,7 @@ export default function Projects() {
                                                 href={project.githubUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="hover:text-[#D4AF37] transition-colors"
+                                                className="hover:text-[#D4AF37] transition-colors p-1"
                                                 title="View Source Code"
                                             >
                                                 <GithubIcon size={18} />
@@ -56,7 +56,7 @@ export default function Projects() {
                                                 href={project.liveUrl}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="hover:text-[#D4AF37] transition-colors"
+                                                className="hover:text-[#D4AF37] transition-colors p-1"
                                                 title="View Live App"
                                             >
                                                 <ExternalLink size={18} />
@@ -66,15 +66,15 @@ export default function Projects() {
                                 </div>
 
                                 {/* Project Title & Tagline */}
-                                <h3 className="text-2xl font-bold text-white group-hover:text-[#D4AF37] transition-colors mb-1">
+                                <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[#D4AF37] transition-colors mb-1">
                                     {project.title}
                                 </h3>
-                                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-4">
+                                <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-3 sm:mb-4">
                                     {project.tagline}
                                 </p>
 
                                 {/* Description */}
-                                <p className="text-sm text-gray-300 leading-relaxed mb-6">
+                                <p className="text-sm text-gray-300 leading-relaxed mb-5 sm:mb-6">
                                     {project.description}
                                 </p>
                             </div>

@@ -8,9 +8,9 @@ import Contact from './components/Contact'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#080808] text-[#F5F5F5] relative overflow-hidden selection:bg-[#D4AF37] selection:text-black">
+    <div className="min-h-screen bg-[#080808] text-[#F5F5F5] relative max-w-full overflow-x-hidden selection:bg-[#D4AF37] selection:text-black">
       <Navbar />
-      <main>
+      <main className="max-w-full overflow-x-hidden">
         <Hero />
         <Skills />
         <Projects />

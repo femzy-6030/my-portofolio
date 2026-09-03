@@ -4,22 +4,22 @@ import { personalInfo } from '../assets/data/portfolioData'
 
 export default function Hero() {
     return (
-        <section id="about" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <section id="about" className="relative pt-28 pb-16 sm:pt-36 sm:pb-20 md:pt-40 md:pb-28 overflow-hidden">
 
             {/* Ambient Radial Background Glows */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-[#D4AF37]/10 blur-[150px] pointer-events-none rounded-full" />
             <div className="absolute top-[300px] -right-[150px] w-[500px] h-[500px] bg-[#D4AF37]/5 blur-[120px] pointer-events-none rounded-full" />
             <div className="absolute bottom-10 left-10 w-[350px] h-[350px] bg-[#D4AF37]/5 blur-[100px] pointer-events-none rounded-full" />
 
-            <div className="max-w-6xl mx-auto px-6 relative z-10">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
 
                     {/* Left Column: Text & CTAs */}
                     <div className="lg:col-span-7 flex flex-col items-start">
 
                         {/* Status Pill */}
-                        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/10 text-[#D4AF37] text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md">
+                        <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/10 text-[#D4AF37] text-[11px] sm:text-xs font-bold uppercase tracking-widest mb-5 sm:mb-6 backdrop-blur-md">
                             <span className="relative flex h-2 w-2">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D4AF37] opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D4AF37]"></span>
@@ -28,17 +28,17 @@ export default function Hero() {
                         </div>
 
                         {/* Headline */}
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1] text-white">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] sm:leading-[1.1] text-white">
                             Crafting <span className="gold-gradient-text">high-performance web apps</span> & leading technical execution.
                         </h1>
 
                         {/* Bio Description */}
-                        <p className="mt-6 text-gray-400 text-base md:text-lg max-w-xl leading-relaxed">
+                        <p className="mt-4 sm:mt-6 text-gray-400 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed">
                             {personalInfo.bio}
                         </p>
 
                         {/* Quick Highlights / Location Tag */}
-                        <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-gray-400 font-medium">
+                        <div className="mt-5 sm:mt-6 flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs text-gray-400 font-medium">
                             {personalInfo.location && (
                                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
                                     <MapPin size={14} className="text-[#D4AF37]" />
@@ -56,17 +56,17 @@ export default function Hero() {
                         </div>
 
                         {/* CTA Buttons */}
-                        <div className="mt-8 flex flex-wrap gap-4 w-full sm:w-auto">
+                        <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
                             <a
                                 href="#projects"
-                                className="w-full sm:w-auto text-center px-7 py-3.5 rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-black font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:brightness-110 transition-all shadow-lg shadow-[#D4AF37]/20"
+                                className="w-full sm:w-auto text-center px-6 sm:px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-black font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:brightness-110 transition-all shadow-lg shadow-[#D4AF37]/20"
                             >
                                 <Rocket size={18} /> View Selected Work
                             </a>
 
                             <a
                                 href="#skills"
-                                className="w-full sm:w-auto text-center px-7 py-3.5 rounded-lg bg-white/5 border border-white/10 hover:border-[#D4AF37]/40 text-white font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
+                                className="w-full sm:w-auto text-center px-6 sm:px-7 py-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#D4AF37]/40 text-white font-bold text-sm tracking-wide flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
                             >
                                 <Terminal size={18} className="text-[#D4AF37]" /> Explore Capabilities
                             </a>
