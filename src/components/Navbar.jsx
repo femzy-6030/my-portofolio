@@ -14,14 +14,14 @@ export default function Navbar() {
 
     return (
         <nav className="w-full border-b border-white/10 backdrop-blur-md fixed top-0 left-0 z-50 bg-[#080808]/85">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+            <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 sm:py-4 lg:px-8 flex items-center justify-between gap-4">
 
                 {/* Brand Logo */}
                 <a href="#" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
                     <img
                         src="/logo.png"
                         alt="Oluwafemi Logo"
-                        className="h-8 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 shrink-0"
+                        className="h-8 md:h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 shrink-0"
                     />
                     <span className="font-bold text-xs sm:text-base md:text-lg tracking-wider text-white uppercase group-hover:text-white transition-colors truncate">
                         OLUWAFEMI'S PORTFOLIO<span className="text-[#D4AF37]">.</span>

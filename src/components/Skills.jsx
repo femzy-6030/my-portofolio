@@ -31,11 +31,11 @@ export default function Skills() {
     ]
 
     return (
-        <section id="skills" className="py-16 sm:py-20 bg-[#0C0C0C] border-y border-white/5 relative">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="skills" className="py-14 sm:py-20 bg-[#0C0C0C] border-y border-white/5 relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                <div className="mb-10 sm:mb-14">
+                <div className="mb-8 sm:mb-12">
                     <p className="text-[#D4AF37] font-bold text-xs uppercase tracking-widest mb-2">Core Competencies</p>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
                         Capabilities & Technical Stack
@@ -47,9 +47,9 @@ export default function Skills() {
                     {skillCategories.map((category) => (
                         <div
                             key={category.title}
-                            className="p-6 sm:p-8 rounded-2xl bg-[#121212] border border-white/10 hover:border-[#D4AF37]/40 transition-all duration-300 group hover:shadow-xl hover:shadow-[#D4AF37]/5"
+                            className="p-4 sm:p-6 rounded-2xl bg-[#121212] border border-white/10 hover:border-[#D4AF37]/40 transition-all duration-300 group hover:shadow-xl hover:shadow-[#D4AF37]/5"
                         >
-                            <div className="w-12 h-12 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/20 flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-105 transition-transform">
+                            <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/20 flex items-center justify-center mb-4 sm:mb-5 group-hover:scale-105 transition-transform">
                                 {category.icon}
                             </div>
 
@@ -57,16 +57,16 @@ export default function Skills() {
                                 {category.title}
                             </h3>
 
-                            <p className="text-sm text-gray-400 mb-5 sm:mb-6 leading-relaxed">
+                            <p className="text-sm text-neutral-400 mb-4 sm:mb-5 leading-relaxed">
                                 {category.description}
                             </p>
 
                             {/* Badges */}
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
                                 {category.items.map((skill) => (
                                     <span
                                         key={skill}
-                                        className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md bg-white/5 border border-white/10 text-xs font-semibold text-gray-300 group-hover:border-[#D4AF37]/30 transition-colors"
+                                        className="px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-xs font-semibold text-neutral-300 group-hover:border-[#D4AF37]/30 transition-colors"
                                     >
                                         {skill}
                                     </span>

@@ -17,7 +17,7 @@ export default function Contact() {
                     Let’s build something <span className="gold-gradient-text">exceptional</span> together.
                 </h2>
 
-                <p className="text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
+                <p className="text-neutral-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
                     Open to full-stack and frontend engineering positions, project leadership, and technical collaborations.
                 </p>
 
@@ -26,7 +26,7 @@ export default function Contact() {
                     {/* Email CTA */}
                     <a
                         href={`mailto:${personalInfo.email}`}
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-black font-extrabold text-xs sm:text-sm tracking-wide hover:brightness-110 transition-all shadow-xl shadow-[#D4AF37]/20"
+                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 sm:gap-3 px-5 sm:px-7 py-3 sm:py-3.5 rounded-xl bg-gradient-to-r from-[#D4AF37] to-[#B38F24] text-black font-extrabold text-xs sm:text-sm tracking-wide hover:brightness-110 transition-all shadow-xl shadow-[#D4AF37]/20"
                     >
                         <Mail size={18} className="shrink-0" />
                         <span className="truncate">{personalInfo.email}</span>
@@ -35,7 +35,7 @@ export default function Contact() {
                     {/* Phone CTA */}
                     <a
                         href={`tel:${personalInfo.phone ? personalInfo.phone.replace(/\s+/g, '') : ''}`}
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#D4AF37]/40 text-white font-extrabold text-xs sm:text-sm tracking-wide hover:bg-white/10 transition-all"
+                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 sm:gap-3 px-5 sm:px-7 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#D4AF37]/40 text-white font-extrabold text-xs sm:text-sm tracking-wide hover:bg-white/10 transition-all"
                     >
                         <Phone size={18} className="text-[#D4AF37] shrink-0" />
                         <span>{personalInfo.phone}</span>
