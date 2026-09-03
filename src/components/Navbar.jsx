@@ -18,10 +18,12 @@ export default function Navbar() {
 
                 {/* Brand Logo */}
                 <a href="#" className="flex items-center gap-3 group">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D4AF37] to-[#8C6D1F] flex items-center justify-center font-black text-black text-xl shadow-lg shadow-[#D4AF37]/20 group-hover:scale-105 transition-transform border border-[#D4AF37]/30">
-                        O
-                    </div>
-                    <span className="font-bold text-lg tracking-wider text-white uppercase">
+                    <img
+                        src="/logo-icon.png"
+                        alt="Oluwafemi Logo"
+                        className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(212,175,55,0.35)]"
+                    />
+                    <span className="font-bold text-lg tracking-wider text-white uppercase group-hover:text-white transition-colors">
                         OLUWAFEMI'S PORTFOLIO<span className="text-[#D4AF37]">.</span>
                     </span>
                 </a>
