@@ -19,9 +19,9 @@ export default function Navbar() {
                 {/* Brand Logo */}
                 <a href="#" className="flex items-center gap-3 group">
                     <img
-                        src="/Oluwafemi logo (1).png"
+                        src="/Oluwafemi logo.png"
                         alt="Oluwafemi - Software Developer"
-                        className="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                        className="h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                     <span className="font-bold text-lg tracking-wider text-white uppercase group-hover:text-white transition-colors">
                         OLUWAFEMI'S PORTFOLIO<span className="text-[#D4AF37]">.</span>
