@@ -5,7 +5,7 @@ export const personalInfo = {
     bio: "Full-stack developer specializing in building high-performance React frontend architectures, data verification systems, and technical workflows. Experienced in leading engineering teams, managing intern programs, and building real-world software solutions.",
     location: "Nigeria",
     phone: "+234 9159554540",
-    email: "ooluafemi6030@gmail.com",
+    email: "ooluwafemi6030@gmail.com",
     github: "https://github.com/femzy-6030",
     linkedin: "https://www.linkedin.com/in/oluwafemi-olayinka-160a5825b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     twitter: "https://x.com/Olayinka_6030",
