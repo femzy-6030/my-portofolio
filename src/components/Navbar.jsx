@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Menu, X, Code2 } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import logoIcon from '../assets/logo-icon.png'
 import { personalInfo } from '../assets/data/portfolioData'
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
                 {/* Brand Logo */}
                 <a href="#" className="flex items-center gap-3 group">
                     <img
-                        src="/logo-icon.png"
+                        src={logoIcon}
                         alt="Oluwafemi Logo"
                         className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(212,175,55,0.35)]"
                     />
